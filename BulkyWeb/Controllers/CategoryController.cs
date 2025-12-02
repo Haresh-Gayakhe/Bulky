@@ -27,7 +27,7 @@ namespace BulkyWeb.Controllers
         {
             if(obj.Name == obj.DisplayOrder.ToString())
             {
-                ModelState.AddModelError("Name", "Name and display order can not be same");
+                ModelState.AddModelError("", "Name and display order can not be same");
             }
 
             if(ModelState.IsValid)
